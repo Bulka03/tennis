@@ -1,6 +1,6 @@
 from pygame import * 
 window = display.set_mode((700, 500))
-background = transform.scale(image.load("New Piskel.png"), (700, 500))
+background = transform.scale(image.load("New Piskel (3).png"), (700, 500))
 
 clock = time.Clock()
 FPS = 60
@@ -54,6 +54,8 @@ ball = Ball("New Piskel (5).png", 350, 250, 50, 50, 5)
 
 
 
+
+
 game=True
 finish = False
 
@@ -71,6 +73,12 @@ while game:
         ball.speed_y *= -1
     if ball.rect.x > 640 or ball.rect.x < 0:
         ball.speed_x *= -1
+    if ball.rect.x > 640 or ball.rect.x < 0:
+        finish = True
+    if sprite.collide_rect(sprite2, ball):
+        finish = False
+    if sprite.collide_rect(sprite1, ball):
+        finish = False
     for e in event.get():
         if e.type == QUIT:
             game = False
