@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Игры — Мой сайт{% endblock %}
+
+{% block content %}
+    <h1>Игры от компании "Naughty Dog"</h1>
+    <p>Это страница "Игры от компании "Naughty Dog"". Здесь вы узнаете какие игры были созданы компанией "Naughty Dog", такие как The Last of Us Part(1, 2), серия Uncharted, Crash Bandicoot и в скором времени выйдет Intergalactic: The Heretic Prophet.</p>
+    <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Картинка о играх">
+{% endblock %}

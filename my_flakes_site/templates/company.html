@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}О компании — Мой сайт{% endblock %}
+
+{% block content %}
+    <h1>О компании</h1>
+    <p>Naughty Dog — знаменитая американская студия разработки игр, основанная в 1984 году и ставшая дочерней компанией Sony (PlayStation Studios), известная сериями Crash Bandicoot, Jak and Daxter, Uncharted и The Last of Us, славящимися качественными сюжетными историями и персонажами, переносящими игры на уровень кино. Студия начинала как JAM Software, но приобрела известность под своим нынешним названием, создавая хиты для PlayStation, которые затем выходили и на ПК .</p>
+    <img src="{{ url_for('static', filename='images/company.jpg') }}" alt="Картинка о компании">
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Команда разработчиков — Naughty Dog{% endblock %}
+
+{% block content %}
+    <h1>Команда Naughty Dog</h1>
+    
+    <p>Студия Naughty Dog объединяет талантливых разработчиков, художников, инженеров и сценаристов, создающих игры мирового уровня. Их команда - это сочетание опытных ветеранов индустрии и молодых талантов.</p>
+    
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/workers.jpg') }}" alt="Команда разработчиков Naughty Dog">
+    </div>
+
+    <h2 style="color: var(--accent-color); margin-top: 2.5rem;">Ключевые фигуры студии</h2>
+    
+    <div class="workers-grid">
+        <div class="worker-card">
+            <h3>Нил Дракманн</h3>
+            <div class="position">Сопрезидент и гейм-директор</div>
+            <p>Автор и режиссер серий Uncharted и The Last of Us, обладатель многочисленных наград.</p>
+        </div>
+        
+        <div class="worker-card">
+            <h3>Эван Уэллс</h3>
+            <div class="position">Бывший сопрезидент (до 2023)</div>
+            <p>Руководил студией более 20 лет, внес огромный вклад в развитие всех ключевых франшиз.</p>
+        </div>
+        
+        <div class="worker-card">
+            <h3>Элисон Мори</h3>
+            <div class="position">Вице-президент</div>
+            <p>Отвечает за производство и координацию между отделами разработки.</p>
+        </div>
+        
+        <div class="worker-card">
+            <h3>Арне Мейер</h3>
+            <div class="position">Совице-президент</div>
+            <p>Специалист по коммуникациям и связям с общественностью.</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 2.5rem; padding: 1.5rem; background: rgba(29, 53, 87, 0.3); border-radius: var(--border-radius);">
+        <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Текущие проекты</h3>
+        <p>Команда активно работает над новыми проектами, включая долгожданную игру <strong>Intergalactic: The Heretic Prophet</strong>, которая обещает стать новым этапом в развитии студии.</p>
+        
+        <ul style="margin-top: 1rem;">
+            <li>Разработка новых технологий для PlayStation 5</li>
+            <li>Поддержка и развитие существующих франшиз</li>
+            <li>Эксперименты с новыми игровыми механиками</li>
+            <li>Создание инновационных нарративных систем</li>
+        </ul>
+    </div>
+{% endblock %}
